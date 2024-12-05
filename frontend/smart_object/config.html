@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Object Configuration</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+<header>
+    <h1>Smart Object Configuration</h1>
+</header>
+<main>
+    <form id="config-form">
+        <label for="object-id">Smart Object ID/Name:</label>
+        <input type="text" id="object-id" name="object-id" required>
 
+        <label for="protocol">Data Protocol:</label>
+        <select id="protocol" name="protocol">
+            <option value="http">HTTP</option>
+            <option value="mqtt">MQTT</option>
+        </select>
+
+        <label for="fan-mode">Fan Mode:</label>
+        <select id="fan-mode" name="fan-mode">
+            <option value="manual">Manual</option>
+            <option value="auto">Automatic</option>
+        </select>
+
+        <label for="trigger-temp">Fan Trigger Temperature (°C):</label>
+        <input type="number" id="trigger-temp" name="trigger-temp" required>
+
+        <button type="submit">Save Configuration</button>
+    </form>
+</main>
+<script src="assets/js/config.js"></script>
 </body>
 </html>

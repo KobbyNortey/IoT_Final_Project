@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Object Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Smart Object Dashboard</h1>
+</header>
+<main>
+    <section id="sensor-readings">
+        <h2>Current Sensor Readings</h2>
+        <div id="readings">
+            <p>Temperature: <span id="temp">Loading...</span> °C</p>
+            <p>Humidity: <span id="humidity">Loading...</span> %</p>
+            <p>Light Intensity: <span id="light">Loading...</span> lux</p>
+        </div>
+    </section>
+    <section id="fan-controls">
+        <h2>Fan Controls</h2>
+        <button id="start-fan">Start Fan</button>
+        <button id="stop-fan">Stop Fan</button>
+    </section>
+    <section id="ldr-data">
+        <h2>Last 15 LDR Readings</h2>
+        <ul id="ldr-list">Loading...</ul>
+    </section>
+</main>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
