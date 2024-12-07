@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Historical Data</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
 <header>
     <h1>Historical Data</h1>
+    <nav>
+        <ul>
+            <li><a href="../smart_object/index.html">Smart Object Dashboard</a></li>
+            <li><a href="../smart_object/config.html">Configuration</a></li>
+            <li><a href="historical_data.html">Historical Data</a></li>
+            <li><a href="node_management.html">Node Management</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </nav>
 </header>
-<canvas id="data-chart"></canvas>
+<main>
+    <canvas id="data-chart"></canvas>
+</main>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="assets/js/historical_data.js"></script>
 </body>

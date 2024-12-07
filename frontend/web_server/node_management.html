@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Node Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
+<header>
+    <h1>Node Management</h1>
+    <nav>
+        <ul>
+            <li><a href="../smart_object/index.html">Smart Object Dashboard</a></li>
+            <li><a href="../smart_object/config.html">Configuration</a></li>
+            <li><a href="historical_data.html">Historical Data</a></li>
+            <li><a href="node_management.html">Node Management</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form id="node-form">
+        <label for="node-id">Smart Node ID:</label>
+        <input type="text" id="node-id" name="node-id" required>
 
+        <label for="node-name">Descriptive Name:</label>
+        <input type="text" id="node-name" name="node-name" required>
+
+        <label for="node-location">Location:</label>
+        <input type="text" id="node-location" name="node-location" required>
+
+        <button type="submit">Add Node</button>
+    </form>
+
+    <section id="node-list-section">
+        <h2>Registered Smart Nodes</h2>
+        <ul id="node-list">Loading...</ul>
+    </section>
+</main>
+<script src="assets/js/node_management.js"></script>
 </body>
 </html>

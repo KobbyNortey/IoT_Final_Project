@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reports</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
+<header>
+    <h1>Reports</h1>
+    <nav>
+        <ul>
+            <li><a href="../smart_object/index.html">Smart Object Dashboard</a></li>
+            <li><a href="../smart_object/config.html">Configuration</a></li>
+            <li><a href="historical_data.html">Historical Data</a></li>
+            <li><a href="node_management.html">Node Management</a></li>
+            <li><a href="reports.html">Reports</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form id="report-form">
+        <label for="report-node-id">Select Smart Node:</label>
+        <select id="report-node-id" name="report-node-id">
+            <!-- Populated dynamically -->
+        </select>
 
+        <button type="submit">View Report</button>
+    </form>
+    <section id="report-results">
+        <!-- Report details displayed here -->
+    </section>
+</main>
+<script src="assets/js/reports.js"></script>
 </body>
 </html>

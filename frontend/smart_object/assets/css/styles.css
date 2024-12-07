@@ -149,3 +149,36 @@ canvas {
         margin-bottom: 1rem;
     }
 }
+/* Navigation Menu */
+nav {
+    background: #004080;
+    margin-top: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #003060;
+}
+
